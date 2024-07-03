@@ -37,7 +37,7 @@ export default function Gallery() {
     <main className="bg-white min-h-screen py-16 px-8">
       <section className="w-full py-16 px-8 text-center">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-tertiary montserrat-alternates-regular mb-8">
+          <h2 className="text-4xl font-bold text-tertiary monoton-regular mb-8">
             Our Work Gallery
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

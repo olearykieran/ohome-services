@@ -1,6 +1,5 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,14 +8,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#fac1b4',
-        secondary: '#FFFFFF',
-        tertiary: '#381e00',
-        quart: '#f9f1f1',
-        cinco: '#e0d6cb'
+        primary: "#000000", // black
+        secondary: "#FFFFFF", // white
+        tertiary: "#169B62", // Irish green
+        quart: "#FF883E", // Irish orange
+        cinco: "#333333", // dark gray for additional contrast if needed
+      },
+      fontFamily: {
+        ibarraRealNova: ["var(--font-ibarra-real-nova)", "serif"],
       },
     },
   },
   plugins: [],
 };
-export default config;

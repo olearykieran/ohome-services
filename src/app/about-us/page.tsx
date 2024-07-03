@@ -68,11 +68,11 @@ function HeroSection() {
         className="object-cover absolute inset-0"
       />
       <div className="absolute inset-0 flex items-center justify-center md:justify-start fade-in-section opacity-0 transition-opacity duration-1000 p-4 md:p-24">
-        <div className="bg-quart rounded-md bg-opacity-85 p-6 md:p-16 text-left max-w-[90%] md:max-w-[50%]">
-          <h2 className="text-xl md:text-4xl font-bold text-tertiary montserrat-regular mb-4">
+        <div className="bg-cinco rounded-md bg-opacity-85 p-6 md:p-16 text-left max-w-[90%] md:max-w-[50%]">
+          <h2 className="text-xl md:text-4xl font-bold text-secondary monoton-regular mb-4">
             Our Mission
           </h2>
-          <p className="text-sm md:text-lg text-tertiary montserrat-regular">
+          <p className="text-sm md:text-lg text-secondary monoton-regular">
             High costs shouldn&apos;t prevent you from making your home look brand new.
             With years of experience in residential construction, we understand that many
             Long Island families desire renovations but find full remodel prices
@@ -88,9 +88,9 @@ function HeroSection() {
 
 function WhoWeAreSection() {
   return (
-    <section className="w-full bg-quart py-24 px-4 md:px-8 text-center">
+    <section className="w-full bg-primary py-24 px-4 md:px-8 text-center">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-tertiary montserrat-alternates-regular mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-secondary monoton-regular mb-8">
           Who We Are
         </h2>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center md:items-stretch">
@@ -157,14 +157,14 @@ function TeamMember({ name, title, imageSrc, description, reverse }: TeamMemberP
           <Image src={imageSrc} alt={name} fill className="object-cover rounded-full" />
         </div>
         <h3
-          className={`text-2xl font-semibold text-tertiary montserrat-alternates-regular ${
+          className={`text-2xl font-semibold text-secondary monoton-regular ${
             reverse ? "text-left" : "text-right"
           }`}
         >
           {name}
         </h3>
         <h2
-          className={`text-xl font-semibold text-tertiary montserrat-alternates-regular ${
+          className={`text-xl font-semibold text-secondary monoton-regular ${
             reverse ? "text-left" : "text-right"
           }`}
         >
@@ -172,7 +172,7 @@ function TeamMember({ name, title, imageSrc, description, reverse }: TeamMemberP
         </h2>
       </div>
       <p
-        className={`text-md text-tertiary p-4 md:p-0 montserrat-regular mt-4 ${
+        className={`text-md text-secondary p-4 md:p-0 monoton-regular mt-4 ${
           reverse ? "text-left" : "text-left md:text-right"
         }`}
       >

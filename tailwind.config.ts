@@ -8,13 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: "#000000", // black
+        secondary: "#FFFFFF", // white
+        tertiary: "#169B62", // Irish green
+        quart: "#FF883E", // Irish orange
+        cinco: "#333333", // dark gray for additional contrast if needed
+      },
+      fontFamily: {
+        monoton: ["var(--font-monoton)", "sans-serif"],
       },
     },
   },
   plugins: [],
 };
+
 export default config;

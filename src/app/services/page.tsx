@@ -205,8 +205,8 @@ function HeroSection() {
         className="object-cover absolute inset-0"
       />
       <div className="absolute inset-0 flex items-center justify-start fade-in-section opacity-0 transition-opacity duration-1000 p-4 sm:p-8 md:p-16 lg:p-24">
-        <div className="bg-quart rounded-md bg-opacity-70 p-4 sm:p-8 md:p-12 lg:p-16 text-left w-full sm:w-3/4 md:w-2/3 lg:max-w-[50%]">
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-tertiary montserrat-regular">
+        <div className="bg-cinco rounded-md bg-opacity-70 p-4 sm:p-8 md:p-12 lg:p-16 text-left w-full sm:w-3/4 md:w-2/3 lg:max-w-[50%]">
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-secondary monoton-regular">
             Our Comprehensive Home Services
           </p>
         </div>
@@ -238,7 +238,7 @@ function ServicesContent({
   handleCalculate,
 }: ServicesContentProps) {
   return (
-    <section className="w-full bg-white text-tertiary py-12 sm:py-16 md:py-24 px-4 sm:px-8">
+    <section className="w-full bg-white text-secondary py-12 sm:py-16 md:py-24 px-4 sm:px-8">
       <div className="max-w-6xl mx-auto flex flex-col space-y-12 sm:space-y-16">
         <CalculatorSection
           tileSquareFootage={tileSquareFootage}
@@ -312,8 +312,8 @@ function CalculatorSection({
   handleCalculate,
 }: ServicesContentProps) {
   return (
-    <div className="flex flex-col items-center bg-quart p-4 sm:p-8 rounded-md shadow-md">
-      <h2 className="text-2xl sm:text-3xl font-bold text-tertiary montserrat-alternates-regular mb-4 text-center">
+    <div className="flex flex-col items-center bg-cinco p-4 sm:p-8 rounded-md shadow-md">
+      <h2 className="text-2xl sm:text-3xl font-bold text-secondary monoton-regular mb-4 text-center">
         GlowUp vs Traditional Renovation Cost Calculator
       </h2>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
@@ -336,7 +336,7 @@ function CalculatorSection({
       </div>
       <button
         onClick={handleCalculate}
-        className="bg-primary text-tertiary py-2 px-6 rounded-md hover:bg-tertiary hover:text-primary transition-colors w-full sm:w-auto"
+        className="bg-primary text-secondary py-2 px-6 rounded-md hover:bg-tertiary hover:text-primary transition-colors w-full sm:w-auto"
       >
         Calculate
       </button>
@@ -409,7 +409,7 @@ function CalculatorResults({
           ]}
         />
       </div>
-      <p className="text-xl sm:text-2xl text-center text-tertiary montserrat-bold mt-4">
+      <p className="text-xl sm:text-2xl text-center text-secondary montserrat-bold mt-4">
         <strong>Total Savings:</strong> ${savings}
       </p>
     </div>
@@ -421,10 +421,7 @@ function CostCard({ title, costs }: CostCardProps) {
     <div className="w-full sm:w-1/2 bg-secondary p-4 mb-4 sm:mb-0 sm:mr-4 rounded-md shadow-md">
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       {costs.map((cost, index) => (
-        <p
-          key={index}
-          className="text-base sm:text-lg text-tertiary montserrat-regular mb-2"
-        >
+        <p key={index} className="text-base sm:text-lg text-primary monoton-regular mb-2">
           <strong>{cost.label}:</strong> ${cost.value}
         </p>
       ))}
@@ -449,10 +446,8 @@ function ServiceCard({ title, image, description, reverse }: ServiceCardProps) {
         />
       </div>
       <div className="w-full md:w-1/2 p-8 md:p-12">
-        <h2 className="text-3xl font-bold text-tertiary montserrat-alternates-regular mb-4">
-          {title}
-        </h2>
-        <p className="text-lg text-tertiary montserrat-regular">{description}</p>
+        <h2 className="text-3xl font-bold text-primary monoton-regular mb-4">{title}</h2>
+        <p className="text-lg text-primary monoton-regular">{description}</p>
       </div>
     </div>
   );
